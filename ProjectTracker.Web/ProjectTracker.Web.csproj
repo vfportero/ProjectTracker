@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE71615E-29F2-4641-A907-956043C177AD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectTracker.Web</RootNamespace>
+    <AssemblyName>ProjectTracker.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bower_components\core-a11y-keys\core-a11y-keys.html" />
+    <Content Include="bower_components\core-a11y-keys\demo.html" />
+    <Content Include="bower_components\core-a11y-keys\index.html" />
+    <Content Include="bower_components\core-component-page\bowager-logo.png" />
+    <Content Include="bower_components\core-component-page\core-component-page.html" />
+    <Content Include="bower_components\core-component-page\demo.html" />
+    <Content Include="bower_components\core-component-page\index.html" />
+    <Content Include="bower_components\core-focusable\core-focusable.html" />
+    <Content Include="bower_components\core-focusable\core-focusable.js" />
+    <Content Include="bower_components\core-focusable\demo.html" />
+    <Content Include="bower_components\core-focusable\polymer-mixin.js" />
+    <Content Include="bower_components\core-icon-button\core-icon-button.css" />
+    <Content Include="bower_components\core-icon-button\core-icon-button.html" />
+    <Content Include="bower_components\core-icon-button\demo.html" />
+    <Content Include="bower_components\core-icon-button\index.html" />
+    <Content Include="bower_components\core-icon-button\metadata.html" />
+    <Content Include="bower_components\core-iconset-svg\core-iconset-svg.html" />
+    <Content Include="bower_components\core-iconset-svg\demo.html" />
+    <Content Include="bower_components\core-iconset-svg\index.html" />
+    <Content Include="bower_components\core-iconset-svg\svg-sample-icons.html" />
+    <Content Include="bower_components\core-iconset\core-iconset.html" />
+    <Content Include="bower_components\core-iconset\demo.html" />
+    <Content Include="bower_components\core-iconset\index.html" />
+    <Content Include="bower_components\core-iconset\my-icons-big.png" />
+    <Content Include="bower_components\core-iconset\my-icons.png" />
+    <Content Include="bower_components\core-icons\.gitignore" />
+    <Content Include="bower_components\core-icons\av-icons.html" />
+    <Content Include="bower_components\core-icons\communication-icons.html" />
+    <Content Include="bower_components\core-icons\core-icons.html" />
+    <Content Include="bower_components\core-icons\demo.html" />
+    <Content Include="bower_components\core-icons\device-icons.html" />
+    <Content Include="bower_components\core-icons\editor-icons.html" />
+    <Content Include="bower_components\core-icons\hardware-icons.html" />
+    <Content Include="bower_components\core-icons\image-icons.html" />
+    <Content Include="bower_components\core-icons\index.html" />
+    <Content Include="bower_components\core-icons\maps-icons.html" />
+    <Content Include="bower_components\core-icons\notification-icons.html" />
+    <Content Include="bower_components\core-icons\social-icons.html" />
+    <Content Include="bower_components\core-icon\core-icon.css" />
+    <Content Include="bower_components\core-icon\core-icon.html" />
+    <Content Include="bower_components\core-icon\demo.html" />
+    <Content Include="bower_components\core-icon\index.html" />
+    <Content Include="bower_components\core-icon\metadata.html" />
+    <Content Include="bower_components\core-media-query\core-media-query.html" />
+    <Content Include="bower_components\core-media-query\demo.html" />
+    <Content Include="bower_components\core-media-query\index.html" />
+    <Content Include="bower_components\core-meta\core-meta.html" />
+    <Content Include="bower_components\core-meta\demo.html" />
+    <Content Include="bower_components\core-meta\index.html" />
+    <Content Include="bower_components\core-resizable\core-resizable.html" />
+    <Content Include="bower_components\core-resizable\index.html" />
+    <Content Include="bower_components\core-resizable\test\basic.html" />
+    <Content Include="bower_components\core-resizable\test\index.html" />
+    <Content Include="bower_components\core-resizable\test\test-elements.html" />
+    <Content Include="bower_components\core-selection\core-selection.html" />
+    <Content Include="bower_components\core-selection\demo.html" />
+    <Content Include="bower_components\core-selection\index.html" />
+    <Content Include="bower_components\core-selection\test\basic.html" />
+    <Content Include="bower_components\core-selection\test\index.html" />
+    <Content Include="bower_components\core-selection\test\multi.html" />
+    <Content Include="bower_components\core-selector\.gitignore" />
+    <Content Include="bower_components\core-selector\core-selector.html" />
+    <Content Include="bower_components\core-selector\demo.html" />
+    <Content Include="bower_components\core-selector\index.html" />
+    <Content Include="bower_components\core-selector\metadata.html" />
+    <Content Include="bower_components\core-selector\test\activate-event.html" />
+    <Content Include="bower_components\core-selector\test\basic.html" />
+    <Content Include="bower_components\core-selector\test\content.html" />
+    <Content Include="bower_components\core-selector\test\index.html" />
+    <Content Include="bower_components\core-selector\test\multi.html" />
+    <Content Include="bower_components\core-selector\test\next-previous.html" />
+    <Content Include="bower_components\core-selector\test\selected-attr-prop.html" />
+    <Content Include="bower_components\core-selector\test\template-repeat.html" />
+    <Content Include="bower_components\core-toolbar\core-toolbar.css" />
+    <Content Include="bower_components\core-toolbar\core-toolbar.html" />
+    <Content Include="bower_components\core-toolbar\demo.html" />
+    <Content Include="bower_components\core-toolbar\index.html" />
+    <Content Include="bower_components\core-toolbar\metadata.html" />
+    <Content Include="bower_components\core-toolbar\test\basic.html" />
+    <Content Include="bower_components\core-toolbar\test\index.html" />
+    <Content Include="bower_components\font-roboto\roboto.html" />
+    <Content Include="bower_components\paper-button\demo.html" />
+    <Content Include="bower_components\paper-button\index.html" />
+    <Content Include="bower_components\paper-button\metadata.html" />
+    <Content Include="bower_components\paper-button\paper-button-base.html" />
+    <Content Include="bower_components\paper-button\paper-button.html" />
+    <Content Include="bower_components\paper-button\test\index.html" />
+    <Content Include="bower_components\paper-button\test\paper-button.html" />
+    <Content Include="bower_components\paper-icon-button\demo.html" />
+    <Content Include="bower_components\paper-icon-button\index.html" />
+    <Content Include="bower_components\paper-icon-button\metadata.html" />
+    <Content Include="bower_components\paper-icon-button\paper-icon-button.html" />
+    <Content Include="bower_components\paper-icon-button\test\a11y.html" />
+    <Content Include="bower_components\paper-icon-button\test\basic.html" />
+    <Content Include="bower_components\paper-icon-button\test\index.html" />
+    <Content Include="bower_components\paper-ripple\demo.html" />
+    <Content Include="bower_components\paper-ripple\index.html" />
+    <Content Include="bower_components\paper-ripple\metadata.html" />
+    <Content Include="bower_components\paper-ripple\paper-ripple.html" />
+    <Content Include="bower_components\paper-ripple\test\index.html" />
+    <Content Include="bower_components\paper-ripple\test\position.html" />
+    <Content Include="bower_components\paper-shadow\demo.html" />
+    <Content Include="bower_components\paper-shadow\index.html" />
+    <Content Include="bower_components\paper-shadow\metadata.html" />
+    <Content Include="bower_components\paper-shadow\paper-shadow.css" />
+    <Content Include="bower_components\paper-shadow\paper-shadow.html" />
+    <Content Include="bower_components\paper-shadow\test\basic.html" />
+    <Content Include="bower_components\paper-shadow\test\index.html" />
+    <Content Include="bower_components\paper-tabs\demo.html" />
+    <Content Include="bower_components\paper-tabs\index.html" />
+    <Content Include="bower_components\paper-tabs\metadata.html" />
+    <Content Include="bower_components\paper-tabs\paper-tab.css" />
+    <Content Include="bower_components\paper-tabs\paper-tab.html" />
+    <Content Include="bower_components\paper-tabs\paper-tabs.css" />
+    <Content Include="bower_components\paper-tabs\paper-tabs.html" />
+    <Content Include="bower_components\polymer\layout.html" />
+    <Content Include="bower_components\polymer\polymer.html" />
+    <Content Include="bower_components\polymer\polymer.js" />
+    <Content Include="bower_components\polymer\polymer.min.js" />
+    <Content Include="bower_components\webcomponentsjs\CustomElements.js" />
+    <Content Include="bower_components\webcomponentsjs\CustomElements.min.js" />
+    <Content Include="bower_components\webcomponentsjs\HTMLImports.js" />
+    <Content Include="bower_components\webcomponentsjs\HTMLImports.min.js" />
+    <Content Include="bower_components\webcomponentsjs\ShadowDOM.js" />
+    <Content Include="bower_components\webcomponentsjs\ShadowDOM.min.js" />
+    <Content Include="bower_components\webcomponentsjs\webcomponents-lite.js" />
+    <Content Include="bower_components\webcomponentsjs\webcomponents-lite.min.js" />
+    <Content Include="bower_components\webcomponentsjs\webcomponents.js" />
+    <Content Include="bower_components\webcomponentsjs\webcomponents.min.js" />
+    <Content Include="Content\Styles\polymer.css" />
+    <Content Include="Elements\project.html" />
+    <Content Include="index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bower.json" />
+    <Content Include="bower_components\core-component-page\.bower.json" />
+    <Content Include="bower_components\core-component-page\bower.json" />
+    <Content Include="bower_components\core-component-page\README.md" />
+    <Content Include="bower_components\polymer\.bower.json" />
+    <Content Include="bower_components\polymer\bower.json" />
+    <Content Include="bower_components\polymer\build.log" />
+    <Content Include="bower_components\polymer\README.md" />
+    <Content Include="bower_components\webcomponentsjs\.bower.json" />
+    <Content Include="bower_components\webcomponentsjs\bower.json" />
+    <Content Include="bower_components\webcomponentsjs\build.log" />
+    <Content Include="bower_components\webcomponentsjs\package.json" />
+    <Content Include="bower_components\webcomponentsjs\README.md" />
+    <Content Include="bower_components\core-a11y-keys\.bower.json" />
+    <Content Include="bower_components\core-a11y-keys\bower.json" />
+    <Content Include="bower_components\core-a11y-keys\README.md" />
+    <Content Include="bower_components\core-focusable\.bower.json" />
+    <Content Include="bower_components\core-focusable\bower.json" />
+    <Content Include="bower_components\core-focusable\README.md" />
+    <Content Include="bower_components\core-icon-button\.bower.json" />
+    <Content Include="bower_components\core-icon-button\bower.json" />
+    <Content Include="bower_components\core-icon-button\README.md" />
+    <Content Include="bower_components\core-iconset-svg\.bower.json" />
+    <Content Include="bower_components\core-iconset-svg\bower.json" />
+    <Content Include="bower_components\core-iconset-svg\README.md" />
+    <Content Include="bower_components\core-iconset\.bower.json" />
+    <Content Include="bower_components\core-iconset\bower.json" />
+    <Content Include="bower_components\core-iconset\README.md" />
+    <Content Include="bower_components\core-icons\.bower.json" />
+    <Content Include="bower_components\core-icons\bower.json" />
+    <Content Include="bower_components\core-icons\README.md" />
+    <Content Include="bower_components\core-icon\.bower.json" />
+    <Content Include="bower_components\core-icon\bower.json" />
+    <Content Include="bower_components\core-icon\README.md" />
+    <Content Include="bower_components\core-media-query\.bower.json" />
+    <Content Include="bower_components\core-media-query\bower.json" />
+    <Content Include="bower_components\core-media-query\README.md" />
+    <Content Include="bower_components\core-meta\.bower.json" />
+    <Content Include="bower_components\core-meta\bower.json" />
+    <Content Include="bower_components\core-meta\README.md" />
+    <Content Include="bower_components\core-resizable\.bower.json" />
+    <Content Include="bower_components\core-resizable\bower.json" />
+    <Content Include="bower_components\core-resizable\README.md" />
+    <Content Include="bower_components\core-selection\.bower.json" />
+    <Content Include="bower_components\core-selection\bower.json" />
+    <Content Include="bower_components\core-selection\README.md" />
+    <Content Include="bower_components\core-selector\.bower.json" />
+    <Content Include="bower_components\core-selector\bower.json" />
+    <Content Include="bower_components\core-selector\README.md" />
+    <Content Include="bower_components\core-toolbar\.bower.json" />
+    <Content Include="bower_components\core-toolbar\bower.json" />
+    <Content Include="bower_components\core-toolbar\README.md" />
+    <Content Include="bower_components\font-roboto\.bower.json" />
+    <Content Include="bower_components\paper-button\.bower.json" />
+    <Content Include="bower_components\paper-button\bower.json" />
+    <Content Include="bower_components\paper-button\README.md" />
+    <Content Include="bower_components\paper-icon-button\.bower.json" />
+    <Content Include="bower_components\paper-icon-button\bower.json" />
+    <Content Include="bower_components\paper-icon-button\README.md" />
+    <Content Include="bower_components\paper-ripple\.bower.json" />
+    <Content Include="bower_components\paper-ripple\bower.json" />
+    <Content Include="bower_components\paper-ripple\README.md" />
+    <Content Include="bower_components\paper-shadow\.bower.json" />
+    <Content Include="bower_components\paper-shadow\bower.json" />
+    <Content Include="bower_components\paper-shadow\README.md" />
+    <Content Include="bower_components\paper-tabs\.bower.json" />
+    <Content Include="bower_components\paper-tabs\bower.json" />
+    <Content Include="bower_components\paper-tabs\README.md" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20305</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20305/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

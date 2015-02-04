@@ -1,0 +1,4 @@
+J:\Proyectos Visual Studio\ProjectTracker\ProjectTracker.Core\bin\Debug\ProjectTracker.Core.dll
+J:\Proyectos Visual Studio\ProjectTracker\ProjectTracker.Core\bin\Debug\ProjectTracker.Core.pdb
+J:\Proyectos Visual Studio\ProjectTracker\ProjectTracker.Core\obj\Debug\ProjectTracker.Core.dll
+J:\Proyectos Visual Studio\ProjectTracker\ProjectTracker.Core\obj\Debug\ProjectTracker.Core.pdb

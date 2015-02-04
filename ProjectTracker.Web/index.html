@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>El Project Tracker de Rori Cabanes</title>
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <link rel="import" href="bower_components/font-roboto/roboto.html">
+    <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+    <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+    <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
+    <link rel="import" href="bower_components/core-icons/av-icons.html">
+
+    <link rel="import" href="Elements/project.html">
+    
+    <link rel="stylesheet" type="text/css" href="Content/Styles/polymer.css">
+</head>
+<body unresolved>
+    <core-header-panel>
+
+        <core-toolbar>
+
+            <paper-tabs id="tabs" selected="projects" self-end>
+                <paper-tab name="projects">Proyectos</paper-tab>
+                <paper-tab name="reports">Informes</paper-tab>
+            </paper-tabs>
+
+        </core-toolbar>
+
+        <!-- main page content will go here -->
+        <div class="container" layout vertical center>
+
+            <project-item>
+                <h2>Boda Alberto y Maria Jose</h2>
+                <ul>
+                    <li>Casa <core-icon-button icon="av:play-arrow"></core-icon-button></li>
+                    <li>Ceremonia <core-icon-button icon="av:play-arrow"></core-icon-button></li>
+                </ul>
+            </project-item>
+            <project-item>
+                <h2>Valencia Fashion</h2>
+                <ul>
+                    <li>Sesión <core-icon-button icon="av:play-arrow"></core-icon-button></li>
+                    <li>Selección <core-icon-button icon="av:play-arrow"></core-icon-button></li>
+                    <li>Edición <core-icon-button icon="av:play-arrow"></core-icon-button></li>
+                </ul>
+            </project-item>
+
+        </div>
+
+    </core-header-panel>
+
+    <script>
+        var tabs = document.querySelector('paper-tabs');
+        tabs.addEventListener('core-select', function () {
+            console.log("Selected: " + tabs.selected);
+        });
+    </script>
+</body>
+</html>
