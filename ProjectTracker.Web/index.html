@@ -13,7 +13,7 @@
     <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
     <link rel="import" href="bower_components/core-icons/av-icons.html">
 
-    <link rel="import" href="Elements/project-item/project-item.html">
+    <link rel="import" href="Elements/project-list/project-list.html">
     
     <link rel="stylesheet" type="text/css" href="Content/Styles/polymer.css">
 </head>
@@ -32,21 +32,7 @@
         <!-- main page content will go here -->
         <div class="container" layout vertical center>
 
-            <project-item>
-                <h2>Boda Alberto y Maria Jose</h2>
-                <ul>
-                    <li>Casa <core-icon-button icon="av:play-arrow"></core-icon-button></li>
-                    <li>Ceremonia <core-icon-button icon="av:play-arrow"></core-icon-button></li>
-                </ul>
-            </project-item>
-            <project-item>
-                <h2>Valencia Fashion</h2>
-                <ul>
-                    <li>Sesión <core-icon-button icon="av:play-arrow"></core-icon-button></li>
-                    <li>Selección <core-icon-button icon="av:play-arrow"></core-icon-button></li>
-                    <li>Edición <core-icon-button icon="av:play-arrow"></core-icon-button></li>
-                </ul>
-            </project-item>
+            <project-list show="all"></project-list>
 
         </div>
 

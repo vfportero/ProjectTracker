@@ -1,0 +1,19 @@
+﻿<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../api-service/api-service.html">
+<link rel="import" href="../project-item/project-item.html">
+
+
+<polymer-element name="project-list" attributes="show">
+    <template>
+        <link rel="stylesheet" href="project-list.css">
+        <api-service id="service" projects="{{projects}}"></api-service>
+        <div layout vertical center>
+                <template repeat="{{project in projects}}">
+                    <project-item>
+                        <h2>{{project.Name}}</h2>
+                    </project-item>
+                </template>
+            </div>
+    </template>
+    <script src="project-list.js"></script>
+</polymer-element>

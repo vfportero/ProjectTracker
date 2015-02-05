@@ -60,6 +60,16 @@
     <Content Include="bower_components\core-a11y-keys\core-a11y-keys.html" />
     <Content Include="bower_components\core-a11y-keys\demo.html" />
     <Content Include="bower_components\core-a11y-keys\index.html" />
+    <Content Include="bower_components\core-ajax\core-ajax.html" />
+    <Content Include="bower_components\core-ajax\core-xhr.html" />
+    <Content Include="bower_components\core-ajax\demo-progress.html" />
+    <Content Include="bower_components\core-ajax\demo.html" />
+    <Content Include="bower_components\core-ajax\index.html" />
+    <Content Include="bower_components\core-ajax\metadata.html" />
+    <Content Include="bower_components\core-ajax\test\core-ajax-progress.html" />
+    <Content Include="bower_components\core-ajax\test\core-ajax-race.html" />
+    <Content Include="bower_components\core-ajax\test\core-ajax.html" />
+    <Content Include="bower_components\core-ajax\test\index.html" />
     <Content Include="bower_components\core-component-page\bowager-logo.png" />
     <Content Include="bower_components\core-component-page\core-component-page.html" />
     <Content Include="bower_components\core-component-page\demo.html" />
@@ -187,9 +197,12 @@
     <Content Include="bower_components\webcomponentsjs\webcomponents.js" />
     <Content Include="bower_components\webcomponentsjs\webcomponents.min.js" />
     <Content Include="Content\Styles\polymer.css" />
+    <Content Include="Elements\api-service\api-service.html" />
     <Content Include="Elements\project-item\project-item.js" />
     <Content Include="Elements\project-item\project-item.css" />
     <Content Include="Elements\project-item\project-item.html" />
+    <Content Include="Elements\project-list\project-list.css" />
+    <Content Include="Elements\project-list\project-list.html" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -265,6 +278,9 @@
     <Content Include="bower_components\paper-tabs\.bower.json" />
     <Content Include="bower_components\paper-tabs\bower.json" />
     <Content Include="bower_components\paper-tabs\README.md" />
+    <Content Include="bower_components\core-ajax\.bower.json" />
+    <Content Include="bower_components\core-ajax\bower.json" />
+    <Content Include="bower_components\core-ajax\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
