@@ -46,7 +46,7 @@
   @type Array
   @default []
 -->
-<polymer-element name="api-service" attributes="projects">
+<polymer-element name="projects-api" attributes="projects">
     <template>
         <style>
             :host {
@@ -61,12 +61,11 @@
         </core-ajax>
     </template>
     <script>
-        Polymer('api-service', {
+        Polymer('projects-api', {
             created: function () {
                 this.projects = [];
             },
-            projectsLoaded: function () {
-                // Make a copy of the loaded data
+            currentTrackLoaded: function () {
                 this.projects = this.$.ajax.response.slice(0);
             },
             /**

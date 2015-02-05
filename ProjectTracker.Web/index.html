@@ -13,16 +13,16 @@
     <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
     <link rel="import" href="bower_components/core-icons/av-icons.html">
 
-    <link rel="import" href="Elements/project-list/project-list.html">
+    <!--<link rel="import" href="Elements/project-list/project-list.html">-->
+    <link rel="import" href="Elements/current-track/current-track.html">
     
     <link rel="stylesheet" type="text/css" href="Content/Styles/polymer.css">
 </head>
 <body unresolved>
     <core-header-panel>
-
         <core-toolbar>
-
-            <paper-tabs id="tabs" selected="projects" self-end>
+            <paper-tabs id="tabs" selected="current-task" self-end>
+                <paper-tab name="current-task">Tarea actual</paper-tab>
                 <paper-tab name="projects">Proyectos</paper-tab>
                 <paper-tab name="reports">Informes</paper-tab>
             </paper-tabs>
@@ -31,9 +31,8 @@
 
         <!-- main page content will go here -->
         <div class="container" layout vertical center>
-
-            <project-list show="all"></project-list>
-
+            <!--<project-list show="all"></project-list>-->
+            <current-track></current-track>
         </div>
 
     </core-header-panel>

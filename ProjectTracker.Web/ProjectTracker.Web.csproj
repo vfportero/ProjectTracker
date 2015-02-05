@@ -175,6 +175,10 @@
     <Content Include="bower_components\paper-shadow\paper-shadow.html" />
     <Content Include="bower_components\paper-shadow\test\basic.html" />
     <Content Include="bower_components\paper-shadow\test\index.html" />
+    <Content Include="bower_components\paper-spinner\demo.html" />
+    <Content Include="bower_components\paper-spinner\index.html" />
+    <Content Include="bower_components\paper-spinner\paper-spinner.css" />
+    <Content Include="bower_components\paper-spinner\paper-spinner.html" />
     <Content Include="bower_components\paper-tabs\demo.html" />
     <Content Include="bower_components\paper-tabs\index.html" />
     <Content Include="bower_components\paper-tabs\metadata.html" />
@@ -197,12 +201,16 @@
     <Content Include="bower_components\webcomponentsjs\webcomponents.js" />
     <Content Include="bower_components\webcomponentsjs\webcomponents.min.js" />
     <Content Include="Content\Styles\polymer.css" />
-    <Content Include="Elements\api-service\api-service.html" />
+    <Content Include="Elements\currenttrack-api\currenttrack-api.html" />
+    <Content Include="Elements\projects-api\projects-api.html" />
+    <Content Include="Elements\current-track\current-track.css" />
+    <Content Include="Elements\current-track\current-track.html" />
     <Content Include="Elements\project-item\project-item.js" />
     <Content Include="Elements\project-item\project-item.css" />
     <Content Include="Elements\project-item\project-item.html" />
     <Content Include="Elements\project-list\project-list.css" />
     <Content Include="Elements\project-list\project-list.html" />
+    <Content Include="Elements\project-list\project-list.js" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -281,6 +289,9 @@
     <Content Include="bower_components\core-ajax\.bower.json" />
     <Content Include="bower_components\core-ajax\bower.json" />
     <Content Include="bower_components\core-ajax\README.md" />
+    <Content Include="bower_components\paper-spinner\.bower.json" />
+    <Content Include="bower_components\paper-spinner\bower.json" />
+    <Content Include="bower_components\paper-spinner\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

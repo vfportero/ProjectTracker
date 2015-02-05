@@ -28,9 +28,9 @@
   }
   @media (min-width: 481px) {
     #tabs {
-      width: 200px;
+      width: 400px;
     }
     .container {
       width: 400px;
     }
-  }
+  }
