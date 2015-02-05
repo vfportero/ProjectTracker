@@ -1,6 +1,0 @@
-J:\Proyectos Visual Studio\ProjectTracker\ProjectTracker.Web\bin\ProjectTracker.Web.dll.config
-J:\Proyectos Visual Studio\ProjectTracker\ProjectTracker.Web\bin\ProjectTracker.Web.dll
-J:\Proyectos Visual Studio\ProjectTracker\ProjectTracker.Web\bin\ProjectTracker.Web.pdb
-J:\Proyectos Visual Studio\ProjectTracker\ProjectTracker.Web\obj\Debug\ProjectTracker.Web.csprojResolveAssemblyReference.cache
-J:\Proyectos Visual Studio\ProjectTracker\ProjectTracker.Web\obj\Debug\ProjectTracker.Web.dll
-J:\Proyectos Visual Studio\ProjectTracker\ProjectTracker.Web\obj\Debug\ProjectTracker.Web.pdb
