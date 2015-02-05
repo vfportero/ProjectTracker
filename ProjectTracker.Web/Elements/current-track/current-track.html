@@ -6,14 +6,16 @@
     <template>
         <link rel="stylesheet" href="current-track.css">
         <currenttrack-api id="service" currenttrack="{{currenttrack}}"></currenttrack-api>
-        <div class="card-header" layout horizontal center>
-            
-            <h2>{{currenttrack.Task.Project.Name}} - {{currenttrack.Task.Name}}</h2>
+        <template bind if="{{ currenttrack }}">
+            <div class="card-header" layout horizontal center>
+                <h2>{{currenttrack.Task.Project.Name}} - {{currenttrack.Task.Name}}</h2>
+            </div>
             <div>
                 <paper-spinner active></paper-spinner>
                 Desde: {{currenttrack.StartDate}}
             </div>
-        </div>
+        </template>
+
     </template>
     <script>
         Polymer({});

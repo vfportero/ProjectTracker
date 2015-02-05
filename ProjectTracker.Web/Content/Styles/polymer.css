@@ -1,19 +1,22 @@
-﻿  html,body {
+﻿html, body {
     height: 100%;
     margin: 0;
     background-color: #E5E5E5;
     font-family: 'RobotoDraft', sans-serif;
-  }
-  core-header-panel {
+}
+
+core-header-panel {
     height: 100%;
     overflow: auto;
-    -webkit-overflow-scrolling: touch; 
-  }
-  core-toolbar {
+    -webkit-overflow-scrolling: touch;
+}
+
+core-toolbar {
     background: #9C27B0;
     color: white;
-  }
-  #tabs {
+}
+
+#tabs {
     width: 100%;
     margin: 0;
     -webkit-user-select: none;
@@ -21,16 +24,23 @@
     -ms-user-select: none;
     user-select: none;
     text-transform: uppercase;
-  }
-  .container {
+}
+
+.container {
     width: 80%;
     margin: 50px auto;
-  }
-  @media (min-width: 481px) {
+}
+
+@media (min-width: 481px) {
     #tabs {
-      width: 400px;
+        width: 400px;
     }
+
     .container {
-      width: 400px;
+        width: 400px;
     }
-  }
+}
+
+html /deep/ #ink {
+    color: #CDDC39;
+}
