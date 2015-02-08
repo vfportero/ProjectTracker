@@ -1,6 +1,7 @@
 ﻿<link rel="import" href="../../bower_components/polymer/polymer.html">
 <link rel="import" href="../currenttrack-api/currenttrack-api.html">
 <link rel="import" href="../../bower_components/paper-spinner/paper-spinner.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
 
 <polymer-element name="current-track">
     <template>
@@ -12,8 +13,8 @@
             </div>
             <div>
                 <paper-spinner active></paper-spinner>
-                Desde: {{currenttrack.StartDate}}
-            </div>
+                Desde: {{currenttrack.FriendlyTime}} - Duración: {{currenttrack.Duration}}  <paper-icon-button icon="av:stop"></paper-icon-button>
+</div>
         </template>
 
     </template>

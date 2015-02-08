@@ -148,6 +148,95 @@
     <Content Include="bower_components\core-toolbar\test\basic.html" />
     <Content Include="bower_components\core-toolbar\test\index.html" />
     <Content Include="bower_components\font-roboto\roboto.html" />
+    <Content Include="bower_components\momentjs\benchmarks\clone.js" />
+    <Content Include="bower_components\momentjs\locale\af.js" />
+    <Content Include="bower_components\momentjs\locale\ar-ma.js" />
+    <Content Include="bower_components\momentjs\locale\ar-sa.js" />
+    <Content Include="bower_components\momentjs\locale\ar-tn.js" />
+    <Content Include="bower_components\momentjs\locale\ar.js" />
+    <Content Include="bower_components\momentjs\locale\az.js" />
+    <Content Include="bower_components\momentjs\locale\be.js" />
+    <Content Include="bower_components\momentjs\locale\bg.js" />
+    <Content Include="bower_components\momentjs\locale\bn.js" />
+    <Content Include="bower_components\momentjs\locale\bo.js" />
+    <Content Include="bower_components\momentjs\locale\br.js" />
+    <Content Include="bower_components\momentjs\locale\bs.js" />
+    <Content Include="bower_components\momentjs\locale\ca.js" />
+    <Content Include="bower_components\momentjs\locale\cs.js" />
+    <Content Include="bower_components\momentjs\locale\cv.js" />
+    <Content Include="bower_components\momentjs\locale\cy.js" />
+    <Content Include="bower_components\momentjs\locale\da.js" />
+    <Content Include="bower_components\momentjs\locale\de-at.js" />
+    <Content Include="bower_components\momentjs\locale\de.js" />
+    <Content Include="bower_components\momentjs\locale\el.js" />
+    <Content Include="bower_components\momentjs\locale\en-au.js" />
+    <Content Include="bower_components\momentjs\locale\en-ca.js" />
+    <Content Include="bower_components\momentjs\locale\en-gb.js" />
+    <Content Include="bower_components\momentjs\locale\eo.js" />
+    <Content Include="bower_components\momentjs\locale\es.js" />
+    <Content Include="bower_components\momentjs\locale\et.js" />
+    <Content Include="bower_components\momentjs\locale\eu.js" />
+    <Content Include="bower_components\momentjs\locale\fa.js" />
+    <Content Include="bower_components\momentjs\locale\fi.js" />
+    <Content Include="bower_components\momentjs\locale\fo.js" />
+    <Content Include="bower_components\momentjs\locale\fr-ca.js" />
+    <Content Include="bower_components\momentjs\locale\fr.js" />
+    <Content Include="bower_components\momentjs\locale\fy.js" />
+    <Content Include="bower_components\momentjs\locale\gl.js" />
+    <Content Include="bower_components\momentjs\locale\he.js" />
+    <Content Include="bower_components\momentjs\locale\hi.js" />
+    <Content Include="bower_components\momentjs\locale\hr.js" />
+    <Content Include="bower_components\momentjs\locale\hu.js" />
+    <Content Include="bower_components\momentjs\locale\hy-am.js" />
+    <Content Include="bower_components\momentjs\locale\id.js" />
+    <Content Include="bower_components\momentjs\locale\is.js" />
+    <Content Include="bower_components\momentjs\locale\it.js" />
+    <Content Include="bower_components\momentjs\locale\ja.js" />
+    <Content Include="bower_components\momentjs\locale\ka.js" />
+    <Content Include="bower_components\momentjs\locale\km.js" />
+    <Content Include="bower_components\momentjs\locale\ko.js" />
+    <Content Include="bower_components\momentjs\locale\lb.js" />
+    <Content Include="bower_components\momentjs\locale\lt.js" />
+    <Content Include="bower_components\momentjs\locale\lv.js" />
+    <Content Include="bower_components\momentjs\locale\mk.js" />
+    <Content Include="bower_components\momentjs\locale\ml.js" />
+    <Content Include="bower_components\momentjs\locale\mr.js" />
+    <Content Include="bower_components\momentjs\locale\ms-my.js" />
+    <Content Include="bower_components\momentjs\locale\my.js" />
+    <Content Include="bower_components\momentjs\locale\nb.js" />
+    <Content Include="bower_components\momentjs\locale\ne.js" />
+    <Content Include="bower_components\momentjs\locale\nl.js" />
+    <Content Include="bower_components\momentjs\locale\nn.js" />
+    <Content Include="bower_components\momentjs\locale\pl.js" />
+    <Content Include="bower_components\momentjs\locale\pt-br.js" />
+    <Content Include="bower_components\momentjs\locale\pt.js" />
+    <Content Include="bower_components\momentjs\locale\ro.js" />
+    <Content Include="bower_components\momentjs\locale\ru.js" />
+    <Content Include="bower_components\momentjs\locale\sk.js" />
+    <Content Include="bower_components\momentjs\locale\sl.js" />
+    <Content Include="bower_components\momentjs\locale\sq.js" />
+    <Content Include="bower_components\momentjs\locale\sr-cyrl.js" />
+    <Content Include="bower_components\momentjs\locale\sr.js" />
+    <Content Include="bower_components\momentjs\locale\sv.js" />
+    <Content Include="bower_components\momentjs\locale\ta.js" />
+    <Content Include="bower_components\momentjs\locale\th.js" />
+    <Content Include="bower_components\momentjs\locale\tl-ph.js" />
+    <Content Include="bower_components\momentjs\locale\tr.js" />
+    <Content Include="bower_components\momentjs\locale\tzm-latn.js" />
+    <Content Include="bower_components\momentjs\locale\tzm.js" />
+    <Content Include="bower_components\momentjs\locale\uk.js" />
+    <Content Include="bower_components\momentjs\locale\uz.js" />
+    <Content Include="bower_components\momentjs\locale\vi.js" />
+    <Content Include="bower_components\momentjs\locale\zh-cn.js" />
+    <Content Include="bower_components\momentjs\locale\zh-tw.js" />
+    <Content Include="bower_components\momentjs\meteor\export.js" />
+    <Content Include="bower_components\momentjs\meteor\test.js" />
+    <Content Include="bower_components\momentjs\min\locales.js" />
+    <Content Include="bower_components\momentjs\min\locales.min.js" />
+    <Content Include="bower_components\momentjs\min\moment-with-locales.js" />
+    <Content Include="bower_components\momentjs\min\moment-with-locales.min.js" />
+    <Content Include="bower_components\momentjs\min\moment.min.js" />
+    <Content Include="bower_components\momentjs\moment.js" />
     <Content Include="bower_components\paper-button\demo.html" />
     <Content Include="bower_components\paper-button\index.html" />
     <Content Include="bower_components\paper-button\metadata.html" />
@@ -292,6 +381,14 @@
     <Content Include="bower_components\paper-spinner\.bower.json" />
     <Content Include="bower_components\paper-spinner\bower.json" />
     <Content Include="bower_components\paper-spinner\README.md" />
+    <Content Include="bower_components\momentjs\.bower.json" />
+    <Content Include="bower_components\momentjs\bower.json" />
+    <Content Include="bower_components\momentjs\CHANGELOG.md" />
+    <Content Include="bower_components\momentjs\LICENSE" />
+    <Content Include="bower_components\momentjs\meteor\README.md" />
+    <Content Include="bower_components\momentjs\Moment.js.nuspec" />
+    <Content Include="bower_components\momentjs\README.md" />
+    <Content Include="bower_components\momentjs\scripts\npm_prepublish.sh" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -299,6 +396,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

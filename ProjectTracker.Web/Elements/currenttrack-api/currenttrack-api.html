@@ -1,5 +1,6 @@
 ﻿<link rel="import" href="../../bower_components/polymer/polymer.html">
 <link rel="import" href="../../bower_components/core-ajax/core-ajax.html">
+<script src="../../bower_components/momentjs/moment.js"></script>
 <!--
   `<post-service>` provides an API for a fake service --
   _unquote_, the read-only social networking service!
@@ -66,8 +67,16 @@
                 this.currenttrack = undefined;
             },
             currentTrackLoaded: function () {
-                
-                this.currenttrack = this.$.ajax.response;
+                var response = this.$.ajax.response;
+                response.FriendlyTime = moment(response.StartDate).format("LT");
+
+                var ms = moment(new Date()).diff(moment(response.StartDate));
+                var d = moment.duration(ms);
+                var duration = Math.floor(d.asHours()) + moment.utc(ms).format(":mm");
+
+                response.Duration = duration;
+
+                this.currenttrack = response;
             },
             /**
              * Update the service with the current favorite value.
