@@ -1,0 +1,19 @@
+﻿<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../../bower_components/core-ajax/core-ajax.html">
+
+<polymer-element name="projects-api" attributes="projects">
+    <template>
+        <style>
+            :host {
+                display: none;
+            }
+        </style>
+        <core-ajax id="ajax"
+                   auto
+                   url="http://localhost:19138/api/project"
+                   on-core-response="{{projectsLoaded}}"
+                   handleas="json">
+        </core-ajax>
+    </template>
+    <script src="projects-api.js"></script>
+</polymer-element>

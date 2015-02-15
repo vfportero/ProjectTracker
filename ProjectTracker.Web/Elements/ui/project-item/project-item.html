@@ -1,0 +1,21 @@
+﻿<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../../bower_components/paper-input/paper-input.html">
+<polymer-element name="project-item" attributes="project">
+    <template>
+        <link rel="stylesheet" href="project-item.css">
+        <div class="header" layout horizontal center>
+            <h2>
+                <paper-input label="Proyecto" value="{{project.Name}}"></paper-input>
+            </h2>
+        </div>     
+        <ul style="list-style-type: none;margin-top: -10px;">
+            <template repeat="{{task in project.Tasks}}">
+                <li>
+                    <paper-input label="Tarea" value="{{task.Name}}"></paper-input>
+                </li>
+            </template>
+            <paper-input label="Nueva tarea"></paper-input>
+        </ul>
+    </template>
+    <script src="project-item.js"></script>
+</polymer-element>

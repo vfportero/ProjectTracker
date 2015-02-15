@@ -1,0 +1,19 @@
+﻿<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../../bower_components/core-ajax/core-ajax.html">
+<script src="../../../bower_components/momentjs/moment.js"></script>
+<polymer-element name="currenttrack-api" attributes="currenttrack">
+    <template>
+        <style>
+            :host {
+                display: none;
+            }
+        </style>
+        <core-ajax id="ajax"
+                   auto
+                   url="http://localhost:19138/api/track/current"
+                   on-core-response="{{currentTrackLoaded}}"
+                   handleas="json">
+        </core-ajax>
+    </template>
+    <script src="current-track.js"></script>
+</polymer-element>

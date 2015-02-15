@@ -57,7 +57,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app.js" />
     <Content Include="bower_components\core-a11y-keys\core-a11y-keys.html" />
     <Content Include="bower_components\core-a11y-keys\demo.html" />
     <Content Include="bower_components\core-a11y-keys\index.html" />
@@ -154,6 +153,14 @@
     <Content Include="bower_components\core-icon\demo.html" />
     <Content Include="bower_components\core-icon\index.html" />
     <Content Include="bower_components\core-icon\metadata.html" />
+    <Content Include="bower_components\core-input\core-input.css" />
+    <Content Include="bower_components\core-input\core-input.html" />
+    <Content Include="bower_components\core-input\demo.html" />
+    <Content Include="bower_components\core-input\index.html" />
+    <Content Include="bower_components\core-input\metadata.html" />
+    <Content Include="bower_components\core-input\test\a11y.html" />
+    <Content Include="bower_components\core-input\test\basic.html" />
+    <Content Include="bower_components\core-input\test\index.html" />
     <Content Include="bower_components\core-item\core-item.css" />
     <Content Include="bower_components\core-item\core-item.html" />
     <Content Include="bower_components\core-item\demo.html" />
@@ -318,6 +325,13 @@
     <Content Include="bower_components\paper-button\paper-button.html" />
     <Content Include="bower_components\paper-button\test\index.html" />
     <Content Include="bower_components\paper-button\test\paper-button.html" />
+    <Content Include="bower_components\paper-fab\demo.html" />
+    <Content Include="bower_components\paper-fab\index.html" />
+    <Content Include="bower_components\paper-fab\metadata.html" />
+    <Content Include="bower_components\paper-fab\paper-fab.html" />
+    <Content Include="bower_components\paper-fab\test\a11y.html" />
+    <Content Include="bower_components\paper-fab\test\basic.html" />
+    <Content Include="bower_components\paper-fab\test\index.html" />
     <Content Include="bower_components\paper-icon-button\demo.html" />
     <Content Include="bower_components\paper-icon-button\index.html" />
     <Content Include="bower_components\paper-icon-button\metadata.html" />
@@ -325,6 +339,19 @@
     <Content Include="bower_components\paper-icon-button\test\a11y.html" />
     <Content Include="bower_components\paper-icon-button\test\basic.html" />
     <Content Include="bower_components\paper-icon-button\test\index.html" />
+    <Content Include="bower_components\paper-input\.gitignore" />
+    <Content Include="bower_components\paper-input\demo.html" />
+    <Content Include="bower_components\paper-input\index.html" />
+    <Content Include="bower_components\paper-input\metadata.html" />
+    <Content Include="bower_components\paper-input\paper-autogrow-textarea.html" />
+    <Content Include="bower_components\paper-input\paper-input-decorator.css" />
+    <Content Include="bower_components\paper-input\paper-input-decorator.html" />
+    <Content Include="bower_components\paper-input\paper-input.html" />
+    <Content Include="bower_components\paper-input\test\index.html" />
+    <Content Include="bower_components\paper-input\test\paper-autogrow-textarea.html" />
+    <Content Include="bower_components\paper-input\test\paper-input-decorator.html" />
+    <Content Include="bower_components\paper-input\test\paper-input.html" />
+    <Content Include="bower_components\paper-input\test\util.js" />
     <Content Include="bower_components\paper-item\demo.html" />
     <Content Include="bower_components\paper-item\index.html" />
     <Content Include="bower_components\paper-item\metadata.html" />
@@ -367,19 +394,54 @@
     <Content Include="bower_components\webcomponentsjs\webcomponents-lite.min.js" />
     <Content Include="bower_components\webcomponentsjs\webcomponents.js" />
     <Content Include="bower_components\webcomponentsjs\webcomponents.min.js" />
-    <Content Include="Content\Styles\app.css" />
-    <Content Include="Elements\currenttrack-api\currenttrack-api.html" />
-    <Content Include="Elements\projects-api\projects-api.html" />
-    <Content Include="Elements\current-track\current-track.css" />
-    <Content Include="Elements\current-track\current-track.html" />
-    <Content Include="Elements\project-item\project-item.js" />
-    <Content Include="Elements\project-item\project-item.css" />
-    <Content Include="Elements\project-item\project-item.html" />
-    <Content Include="Elements\project-list\project-list.css" />
-    <Content Include="Elements\project-list\project-list.html" />
-    <Content Include="Elements\project-list\project-list.js" />
-    <Content Include="app.html" />
-    <Content Include="Elements\projects-api\projects-api.js" />
+    <Content Include="Elements\ui\app-layout\app-layout.css">
+      <DependentUpon>app-layout.less</DependentUpon>
+    </Content>
+    <Content Include="Elements\ui\app-layout\app-layout.html" />
+    <Content Include="Elements\ui\app-layout\app-layout.js" />
+    <Content Include="Elements\ui\app-layout\app-layout.min.css">
+      <DependentUpon>app-layout.css</DependentUpon>
+    </Content>
+    <Content Include="Elements\data\currenttrack-api\current-track.js" />
+    <Content Include="Elements\ui\current-track\current-track.css">
+      <DependentUpon>current-track.less</DependentUpon>
+    </Content>
+    <Content Include="Elements\ui\current-track\current-track.min.css">
+      <DependentUpon>current-track.css</DependentUpon>
+    </Content>
+    <Content Include="Elements\data\currenttrack-api\currenttrack-api.html" />
+    <Content Include="Elements\ui\project-item\project-item.css">
+      <DependentUpon>project-item.less</DependentUpon>
+    </Content>
+    <Content Include="Elements\ui\project-item\project-item.min.css">
+      <DependentUpon>project-item.css</DependentUpon>
+    </Content>
+    <Content Include="Elements\ui\project-list\project-list.css">
+      <DependentUpon>project-list.less</DependentUpon>
+    </Content>
+    <Content Include="Elements\ui\project-list\project-list.min.css">
+      <DependentUpon>project-list.css</DependentUpon>
+    </Content>
+    <Content Include="Elements\data\projects-api\projects-api.html" />
+    <Content Include="Elements\ui\current-track\current-track.html" />
+    <Content Include="Elements\ui\project-item\project-item.js" />
+    <Content Include="Elements\ui\project-item\project-item.html" />
+    <Content Include="Elements\ui\project-list\project-list.html" />
+    <Content Include="Elements\ui\project-list\project-list.js" />
+    <Content Include="index.html" />
+    <Content Include="Elements\data\projects-api\projects-api.js" />
+    <Content Include="Styles\site.css">
+      <DependentUpon>site.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\site.min.css">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\variables.css">
+      <DependentUpon>variables.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\variables.min.css">
+      <DependentUpon>variables.css</DependentUpon>
+    </Content>
     <Content Include="Views\stats.html" />
     <Content Include="Views\projects.html" />
     <Content Include="Views\current-track.html" />
@@ -508,6 +570,39 @@
     <Content Include="bower_components\core-menu\.bower.json" />
     <Content Include="bower_components\core-menu\bower.json" />
     <Content Include="bower_components\core-menu\README.md" />
+    <Content Include="bower_components\paper-fab\.bower.json" />
+    <Content Include="bower_components\paper-fab\bower.json" />
+    <Content Include="bower_components\paper-fab\README.md" />
+    <Content Include="bower_components\core-input\.bower.json" />
+    <Content Include="bower_components\core-input\bower.json" />
+    <Content Include="bower_components\core-input\README.md" />
+    <Content Include="bower_components\paper-input\.bower.json" />
+    <Content Include="bower_components\paper-input\bower.json" />
+    <Content Include="bower_components\paper-input\README.md" />
+    <Content Include="Elements\ui\project-item\project-item.less" />
+    <Content Include="Elements\ui\project-item\project-item.css.map">
+      <DependentUpon>project-item.css</DependentUpon>
+    </Content>
+    <Content Include="Elements\ui\project-list\project-list.less" />
+    <Content Include="Elements\ui\project-list\project-list.css.map">
+      <DependentUpon>project-list.css</DependentUpon>
+    </Content>
+    <Content Include="Elements\ui\current-track\current-track.less" />
+    <Content Include="Elements\ui\current-track\current-track.css.map">
+      <DependentUpon>current-track.css</DependentUpon>
+    </Content>
+    <Content Include="Elements\ui\app-layout\app-layout.less" />
+    <Content Include="Elements\ui\app-layout\app-layout.css.map">
+      <DependentUpon>app-layout.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\site.less" />
+    <Content Include="Styles\variables.less" />
+    <Content Include="Styles\site.css.map">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\variables.css.map">
+      <DependentUpon>variables.css</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
