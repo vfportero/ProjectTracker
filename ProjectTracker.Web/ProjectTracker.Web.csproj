@@ -379,6 +379,7 @@
     <Content Include="Elements\project-list\project-list.html" />
     <Content Include="Elements\project-list\project-list.js" />
     <Content Include="app.html" />
+    <Content Include="Elements\projects-api\projects-api.js" />
     <Content Include="Views\stats.html" />
     <Content Include="Views\projects.html" />
     <Content Include="Views\current-track.html" />

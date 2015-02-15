@@ -9,7 +9,7 @@
     margin-top: 20px;
 }
 
-.card-header {
+.header {
     margin-bottom: 10px;
 }
 
@@ -17,7 +17,7 @@ polyfill-next-selector {
     content: '.card-header h2';
 }
 
-.card-header ::content h2 {
+.header h2 {
     margin: 0;
     font-size: 1.8rem;
     font-weight: 300;

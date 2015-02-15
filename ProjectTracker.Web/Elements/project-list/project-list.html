@@ -1,4 +1,6 @@
 ﻿<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-fab/paper-fab.html">
+<link rel="import" href="../../bower_components/core-icons/core-icons.html">
 <link rel="import" href="../projects-api/projects-api.html">
 <link rel="import" href="../project-item/project-item.html">
 
@@ -7,13 +9,12 @@
     <template>
         <link rel="stylesheet" href="project-list.css">
         <projects-api id="service" projects="{{projects}}"></projects-api>
-        <div layout vertical center>
-                <template repeat="{{project in projects}}">
-                    <project-item>
-                        <h2>{{project.Name}}</h2>
-                    </project-item>
-                </template>
-            </div>
+        <div layout vertical>
+            <template repeat="{{project in projects}}">
+                <project-item project="{{project}}"></project-item>
+            </template>
+            <paper-fab icon="add"></paper-fab>
+        </div>
     </template>
     <script src="project-list.js"></script>
 </polymer-element>
