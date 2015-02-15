@@ -26,9 +26,9 @@
                 <core-toolbar>
                     <span>Project Tracker</span>
                 </core-toolbar>
-                <core-menu valueattr="hash" selected="{{route}}" selectedmodel="{{selectedPage}}" on-core-select="{{menuItemSelected}}" on-click="{{ajaxLoad}}">
+                <core-menu valueattr="hash" selected="{{route}}" selectedmodel="{{selectedPage}}" on-core-select="{{menuItemSelected}}" on-click="{{preventDefault}}">
                     <template repeat="{{page, i in pages}}">
-                        <paper-item hash="{{page.hash}}">
+                        <paper-item hash="{{page.hash}}" noink>
                             <core-icon icon="{{page.icon}}"></core-icon>
                             <a href="{{page.url}}">{{page.name}}</a>
                         </paper-item>
@@ -52,45 +52,6 @@
         </core-scaffold>
     </template>
 
-    <script>
-        var template = document.querySelector('#t');
-        var ajax, pages, scaffold;
-
-        template.pages = [
-            { name: 'Tarea activa', hash: 'current-track', icon: 'query-builder', url: '/views/current-track.html' },
-            { name: 'Proyectos', hash: 'projects', icon: 'work', url: '/views/projects.html' },
-            { name: 'Estadísticas', hash: 'stats', icon: 'trending-up', url: '/views/stats.html' },
-        ];
-
-        template.addEventListener('template-bound', function (e) {
-            // Use URL hash for initial route. Otherwise, use the first page.
-            this.route = this.route || "current-track";
-            scaffold = document.querySelector('#scaffold');
-            ajax = document.querySelector('#ajax');
-            pages = document.querySelector('#pages');
-        });
-
-        template.menuItemSelected = function (e, detail, sender) {
-            if (detail.isSelected) {
-
-                // Need to wait one rAF so <core-ajax> has it's URL set.
-                this.async(function () {
-                    ajax.go();
-                    scaffold.closeDrawer();
-                });
-
-            }
-        };
-
-        template.ajaxLoad = function (e, detail, sender) {
-            e.preventDefault(); // prevent link navigation.
-        };
-
-        template.onResponse = function (e, detail, sender) {
-            var html = detail.response.querySelector("body").innerHTML;
-
-            this.injectBoundHTML(html, pages.selectedItem.firstElementChild);
-        };
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>

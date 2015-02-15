@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app.js" />
     <Content Include="bower_components\core-a11y-keys\core-a11y-keys.html" />
     <Content Include="bower_components\core-a11y-keys\demo.html" />
     <Content Include="bower_components\core-a11y-keys\index.html" />
@@ -378,6 +379,9 @@
     <Content Include="Elements\project-list\project-list.html" />
     <Content Include="Elements\project-list\project-list.js" />
     <Content Include="app.html" />
+    <Content Include="Views\stats.html" />
+    <Content Include="Views\projects.html" />
+    <Content Include="Views\current-track.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
